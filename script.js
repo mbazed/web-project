@@ -30,8 +30,9 @@ let weather = {
       document.querySelector(".wind").innerText =
         "Wind speed: " + speed + " km/h";
       document.querySelector(".weather").classList.remove("loading");
-      document.body.style.backgroundImage =
-        "url('https://source.unsplash.com/1600x900/?" + name + "')";
+      //document.body.style.backgroundColor = 'green';
+      //document.body.style.backgroundImage =
+        //"url('https://source.unsplash.com/1600x900/?" + name + "')";
         document.getElementById("temp").value=temp;
         document.getElementById("wind").value=speed;
         document.getElementById("description").value=description;

@@ -5,13 +5,16 @@ body {
     height: 100vh;
     margin: 0;
     font-family: 'Open Sans', sans-serif;
-    background: #222;
-    background-image: url('https://source.unsplash.com/1600x900/?landscape');
+    /*background: #222;*/
+    background: #659999;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #f4791f, #54afaf);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #f4791f, #54afaf); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /*background-image: url('https://source.unsplash.com/1600x900/?landscape');*/
     font-size: 120%;
   }
   
   .card {
-    background: #000000d0;
+    background: #080808d0;
     color: white;
     padding: 2em;
     border-radius: 30px;
@@ -29,8 +32,9 @@ body {
   button {
     margin: 0.5em;
     border: none;
-    height: 44px;
-    width: 44px;
+    border-radius: 10px;
+    height: 43px;
+    width: 43px;
     outline: none;
     background: #7c7c7c2b;
     color: white;

@@ -2,21 +2,30 @@ body{
     /*margin: auto;
     padding: 0;*/
     min-height: 100vh;
+    background: #BBD2C5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #292E49, #536976, #BBD2C5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #292E49, #536976, #BBD2C5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     /*background: rgb(77, 144, 120);
-    background-image: url(image/Background_image.jpeg);*/
+    background-image: url(image/Background_image.jpeg); #536976 #ff0057 #A5FECB*/
     display: flex;
     justify-content: center;
     align-items: center;
+    position:relative;
     font-family: consolas;
 }
 
 .container{
     width: 1000px;
-    position: relative;
+    position: sticky;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
+.container .list-group{
+    display: flex;
+    justify-content: center;
+}
 .container .card{
     position: relative;
     cursor: pointer;
@@ -30,7 +39,7 @@ body{
 
 .container .card .face.face1{
     position: relative;
-    background: rgb(242, 212, 146);
+    background: #5795aa;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,7 +48,7 @@ body{
 }
 
 .container .card:hover .face.face1{
-    background: #ff0057;
+    background: #A5FECB;
     transform: translateY(0);
 }
 
@@ -72,7 +81,7 @@ body{
     align-items: center;
     padding: 20px;
     box-sizing: border-box;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 20px 50px rgba(73, 72, 72, 0.8);
     transform: translateY(-100px);
 }
 
