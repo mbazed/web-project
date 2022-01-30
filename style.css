@@ -93,10 +93,16 @@ body {
   }
   #btndisclaimer:hover{
     background:darkgray;*/
-
-  }
-
+@media(max-width:600px) {
+  .card {
+    margin: 1rem 0.7rem 1rem;
+    max-width: 80vw
   }
+  body { 
+    font-size: 8px;
+}
+}
+
   
   
 
